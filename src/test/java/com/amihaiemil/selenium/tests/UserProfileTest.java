@@ -50,5 +50,6 @@ public final class UserProfileTest {
         Github gh = new SeleniumGithub();
         String username = gh.user("charlesmike").username();
         assertTrue(username.equals("charlesmike"));
+        gh.quit();
     }
 }

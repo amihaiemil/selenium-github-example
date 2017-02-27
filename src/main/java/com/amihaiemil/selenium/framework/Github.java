@@ -45,4 +45,9 @@ public interface Github {
      * @return UserProfilePage.
      */
     public UserProfilePage user(String username);
+    
+    /**
+     * Close the browser.
+     */
+    public void quit();
 }

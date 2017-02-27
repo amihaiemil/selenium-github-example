@@ -27,7 +27,6 @@ package com.amihaiemil.selenium.framework;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.MarionetteDriver;
 
 /**
@@ -75,5 +74,10 @@ public final class SeleniumGithub implements Github {
     	this.driver.get("http://www.github.com/" + username);
         return new RtUserProfilePage(driver);
     }
+
+	@Override
+	public void quit() {
+		this.driver.quit();
+	}
 
 }
