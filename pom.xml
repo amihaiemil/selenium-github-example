@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.amihaiemil.examples</groupId>
+	<artifactId>selenium-github-example</artifactId>
+	<version>1.0.0-SNAPSHOT</version><!--rrv-sed-flag-->
+	<packaging>jar</packaging>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	<name>${project.groupId}:${project.artifactId}</name>
+	<description>An example of Selenium architecture (over Github)</description>
+	<url>http://www.amihaiemil.com/2017/01/24/selenium-and-junit-the-right-way.html</url>
+
+	<licenses>
+		<license>
+			<name>The BSD 3-Clause Licence</name>
+			<url>https://opensource.org/licenses/BSD-3-Clause</url>
+		</license>
+	</licenses>
+	<developers>
+		<developer>
+			<name>Mihai Emil Andronache</name>
+			<email>amihaiemil@gmail.com</email>
+			<url>https://github.com/amihaiemil</url>
+			<id>amihaiemil</id>
+		</developer>
+	</developers>
+	<scm>
+		<url>https://github.com/amihaiemil/selenium-github-example</url>
+		<connection>scm:git:git://github.com/amihaiemil/selenium-github-example.git</connection>
+		<developerConnection>scm:git:git@github.com:amihaiemil/selenium-github-example.git</developerConnection>
+	</scm>
+	<dependencies>
+                <dependency>
+                    <groupId>org.seleniumhq.selenium</groupId>
+                    <artifactId>selenium-java</artifactId>
+                    <version>3.2.0</version>
+                </dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.5.1</version>
+				<configuration>
+					<source>1.6</source>
+					<target>1.6</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
